@@ -1,6 +1,5 @@
 package CodeForces_div2;
 
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +11,6 @@ import java.util.Scanner;
 public class CF372_B {
 
     private static HashMap<Character,Integer> map;
-    private static int flagNum=-1;
 
     public static HashMap<Character,Integer> initMap(){
         HashMap<Character,Integer> m=new HashMap<>();
@@ -30,7 +28,7 @@ public class CF372_B {
 
         ArrayList<Character> list=new ArrayList<>();
         for(Character c:map.keySet()){
-            if(map.get(c)<flagNum){
+            if(map.get(c)<start){
                 list.add(c);
             }
         }
@@ -67,12 +65,10 @@ public class CF372_B {
         char[] ttt=input.toCharArray();
         int posOne=0;
         int posTwo=0;
-        int diffLength=0;
         while(posOne<input.length()){
             if(input.charAt(posOne)=='?'){
 
-                diffLength+=1;
-                if(diffLength>=26){
+                if(posOne-posTwo>=25){
                     if(input.charAt(posTwo)=='?'){
                         change(input,0);
                     }else{
@@ -85,16 +81,13 @@ public class CF372_B {
                 continue;
             }
 
-            if(map.get(input.charAt(posOne))>flagNum){
+            if(map.get(input.charAt(posOne))>=posTwo){
                 posTwo=map.get(input.charAt(posOne))+1;
                 map.put(input.charAt(posOne),posOne);
-                diffLength=diffLength-posTwo+((flagNum>=0)?flagNum:0);
-                flagNum=posTwo;
+                posOne+=1;
             }else{
                 map.put(input.charAt(posOne),posOne);
-                posOne+=1;
-                diffLength+=1;
-                if(diffLength>=26){
+                if(posOne-posTwo>=25){
                     if(input.charAt(posTwo)=='?'){
                         change(input,0);
                     }else{
@@ -102,6 +95,7 @@ public class CF372_B {
                     }
                     return;
                 }
+                posOne+=1;
             }
         }
         System.out.println("-1");
@@ -109,3 +103,4 @@ public class CF372_B {
 
     }
 }
+
