@@ -63,11 +63,11 @@ public class CF372_B {
             return;
         }
         char[] ttt=input.toCharArray();
-        int posOne=0;
+        int posOne=1;
         int posTwo=0;
+        map.put(input.charAt(posTwo),posTwo);
         while(posOne<input.length()){
             if(input.charAt(posOne)=='?'){
-
                 if(posOne-posTwo>=25){
                     if(input.charAt(posTwo)=='?'){
                         change(input,0);

@@ -17,7 +17,7 @@ public class Round7_E {
     private static Writer writer = null;
 
     public static void main(String[] args){
-//        Graph G=new Graph(2,1);
+//        EdgeWeightedUndirectedGraph G=new EdgeWeightedUndirectedGraph(2,1);
 //        G.addEdge(2,1);
 //        G.addEdge(1,2);
 //        G.addEdge(1, 3);
