@@ -27,6 +27,5 @@ public class _50A_Domino_piling {
 //        while(in.nextInt()!=-1){
 //
 //        }
-        System.out.println(count);
     }
 }
