@@ -25,7 +25,6 @@ public class _2_2_Factorial {
             while(M!=0){
                 int a=M&comp;
                 System.out.println("a :"+a);
-
                 res+=a;
                 M--;
             }
