@@ -2,6 +2,9 @@ package beautyofPrograme;
 
 import beautyofPrograme.aa.AInterface;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by yanjiusuo4 on 2016/9/27.
  */
@@ -33,9 +36,12 @@ public class AAA implements AInterface {
     }
 
     public static void main(String[] args){
-        AAA aaa=new AAA();
-        int res=aaa.a();
-        System.out.print(aStatic());
+        Set<Integer> aa=new HashSet<>();
+        System.out.println(aa.add(20));
+        System.out.println(aa.add(20));
+        for(int i:aa){
+            System.out.println(i);
+        }
     }
 
     @Override
