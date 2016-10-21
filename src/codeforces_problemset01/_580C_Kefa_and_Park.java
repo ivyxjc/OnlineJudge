@@ -42,10 +42,17 @@ public class _580C_Kefa_and_Park{
 //            System.out.println("null");
 //        }
 //        return;
+
+//        Tree ttt=dfs.tree;
+//        for(int i=0;i<n;i++){
+//            System.out.println(ttt.adj(i));
+//        }
+
         for(int i=0;i<dfs.res().size();i++){
-            System.out.println(dfs.res().get(i).v);
-            if(dfs.res().get(i).pathCats>m){
-                System.out.println(dfs.res().get(i).v);
+//            System.out.println(dfs.res().get(i).v);
+            System.out.println(dfs.res().get(i).pathCats);
+            if(dfs.res().get(i).pathCats<=m-1){
+//                System.out.println(dfs.res().get(i).v);
                 res+=1;
             }
         }
@@ -105,7 +112,7 @@ public class _580C_Kefa_and_Park{
 //}
 
 class Tree{
-    HashSet<Integer>[] tree;
+    public HashSet<Integer>[] tree;
     int V;
     int E;
 
@@ -134,7 +141,7 @@ class Tree{
         return V;
     }
 
-    public Iterable<Integer> adj(int v){
+    public HashSet<Integer> adj(int v){
         return tree[v];
     }
 }
@@ -149,7 +156,7 @@ class Map{
 }
 
 class DFS{
-    private Tree tree;
+    public Tree tree;
     private int[] cats;
     private int[] marked;
     private ArrayList<Map> res;
@@ -182,16 +189,22 @@ class DFS{
     }
 
     public void dfs(int v,int pathCats){
+//        if(cats[v]==1){
+//            marked[v]=pathCats+=1;
+//        }else{
         marked[v]=pathCats;
-        if(tree.adj(v)==null){
+//        }
+        if(tree.adj(v).size()==1){
             res.add(new Map(v,pathCats));
         }
         for (int i:tree.adj(v)){
             if(marked[i]==-1){
                 if(cats[i]==1){
+                    System.out.println(i+" :"+pathCats);
                     dfs(i,pathCats+1);
                 }else if(cats[i]==0){
-                    dfs(i,pathCats);
+                    System.out.println(i+" :"+pathCats);
+                    dfs(i,0);
                 }
             }
         }
