@@ -42,4 +42,34 @@ public abstract class Base {
     public String toString() {
         return "Base";
     }
+
+    public static void main(String[] args){
+        int n=2000000;
+        int[] prime=new int[n];
+
+        for(int i=0;i<n;i++){
+            prime[i]=i+1;
+        }
+
+
+        int r=(int)(Math.sqrt((double)n));
+
+        System.out.println(r);
+
+        for(int j=2;j<r+1;j++){
+            if(prime[j-1]!=0){
+                int s=j*j;
+                while (s<=n){
+                    prime[s-1]=0;
+                    s+=j;
+                }
+            }
+        }
+        int res=0;
+        for(int i=0;i<n;i++){
+            res+=prime[i];
+        }
+
+        System.out.println(res);
+    }
 }
