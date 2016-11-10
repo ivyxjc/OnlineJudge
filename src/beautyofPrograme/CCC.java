@@ -10,4 +10,6 @@ public class CCC implements AInterface {
     public void aa() {
         System.out.println("CCC");
     }
+
+
 }
