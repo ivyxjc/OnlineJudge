@@ -141,14 +141,28 @@ public class No15_3Sum {
     }
 
 
-    public static void main(String[] args){
-        No15_3Sum test=new No15_3Sum();
-        int[] nums={0,0,0};
-        List<List<Integer>> res=test.threeSum(nums);
-        for(int i=0;i<res.size();i++){
-            System.out.println(res.get(i));
-        }
+//    public static void main(String[] args){
+//        No15_3Sum test=new No15_3Sum();
+//        int[] nums={0,0,0};
+//        List<List<Integer>> res=test.threeSum(nums);
+//        for(int i=0;i<res.size();i++){
+//            System.out.println(res.get(i));
+//        }
+//    }
+
+    public static void main(String[] args) {
+//        Test test = new Test();
+//        test.add(100);
+        List<String> ll=new ArrayList<>();
+        HashMap<Integer,Integer> map=new HashMap<>();
+//        map.put(100,200);
+//        System.out.println(map.get(100));
+        ll.add("1000");
+        ll.add("200");
+//        Iterator<String> it = ll.iterator();
+        System.out.println(ll.get(0));
+//        while(it.hasNext()){
+//            System.out.println(it.next());
+//        }
     }
-
-
 }
