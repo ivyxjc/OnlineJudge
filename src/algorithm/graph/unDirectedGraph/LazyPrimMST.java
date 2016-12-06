@@ -1,4 +1,4 @@
-package graph.unDirectedGraph;
+package algorithm.graph.unDirectedGraph;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

@@ -1,6 +1,6 @@
-package graph.unDirectedGraph;
+package algorithm.graph.unDirectedGraph;
 
-import graph.Bag;
+import algorithm.graph.Bag;
 
 /**
  * Created by ivyxjc on 2016/9/23.

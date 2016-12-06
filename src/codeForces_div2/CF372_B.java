@@ -37,7 +37,7 @@ public class CF372_B {
         int tmp=0;
         for(int i=start;i<start+26;i++){
             if(out[i]=='?'){
-//                System.out.print(list.get(tmp));
+//                System.out.print(algorithm.list.get(tmp));
                 out[i]=list.get(tmp);
                 tmp++;
             }

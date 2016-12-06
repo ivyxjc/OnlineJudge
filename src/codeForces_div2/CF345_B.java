@@ -14,7 +14,7 @@
 //        reader = new InputStreamReader(System.in);
 //        writer = new OutputStreamWriter(System.out);
 //        int N=getInt();
-//        list<Integer> beautyArray=new ArrayList<>();
+//        algorithm.list<Integer> beautyArray=new ArrayList<>();
 //        for(int i=0;i<N;i++){
 //            beautyArray.add(getInt());
 ////            Random a=new Random();
@@ -28,7 +28,7 @@
 ////            System.out.println(beautyArray.get(i));
 ////        }
 //        Collections.sort(beautyArray);
-//        list<Integer> numOfDuplicate=new ArrayList<>();
+//        algorithm.list<Integer> numOfDuplicate=new ArrayList<>();
 //
 //        Integer a=200;
 //        Integer b=200;
@@ -66,11 +66,11 @@
 //        System.out.println(res);
 //    }
 //
-//    public static int count(list<Integer> list){
+//    public static int count(algorithm.list<Integer> algorithm.list){
 //        int res=0;
-//        int size=list.size();
+//        int size=algorithm.list.size();
 //        for(int i=0;i<size;i++){
-//            if(list.get(i)>=1){
+//            if(algorithm.list.get(i)>=1){
 //                res++;
 //            }
 //        }

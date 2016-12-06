@@ -1,8 +1,8 @@
 package codeForces_div2;
 
-import graph.directedGraph.BellmanFordSP;
-import graph.directedGraph.DirectedEdge;
-import graph.directedGraph.EdgeWeightedDirectedGraph;
+import algorithm.graph.directedGraph.BellmanFordSP;
+import algorithm.graph.directedGraph.DirectedEdge;
+import algorithm.graph.directedGraph.EdgeWeightedDirectedGraph;
 
 
 import java.util.Scanner;

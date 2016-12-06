@@ -1,4 +1,4 @@
-package graph.directedGraph;
+package algorithm.graph.directedGraph;
 
 /**
  * Created by yanjiusuo4 on 2016/9/23.
