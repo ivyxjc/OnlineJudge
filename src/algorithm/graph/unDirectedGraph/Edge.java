@@ -1,4 +1,4 @@
-package graph.unDirectedGraph;
+package algorithm.graph.unDirectedGraph;
 
 /**
  * Created by yanjiusuo4 on 2016/9/23.

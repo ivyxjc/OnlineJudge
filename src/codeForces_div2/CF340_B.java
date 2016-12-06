@@ -1,7 +1,6 @@
 package codeForces_div2;
 
 import java.util.Scanner;
-
 /**
  * Created by xgh on 2016/1/31.
  */
@@ -15,7 +14,7 @@ public class CF340_B {
         boolean flag=false;
         int tmp=-1;
         int k=0;
-
+    
         long res=1;
 
         while(cakePieces!=0) {
@@ -44,6 +43,7 @@ public class CF340_B {
             }
         }
         if(k==0){
+            
             System.out.println(res);
         }else
             System.out.println(res/(k+1));

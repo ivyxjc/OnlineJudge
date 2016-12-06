@@ -1,6 +1,6 @@
-package graph.directedGraph;
+package algorithm.graph.directedGraph;
 
-import graph.Bag;
+import algorithm.graph.Bag;
 
 /**
  * Created by yanjiusuo4 on 2016/9/23.
