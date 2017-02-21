@@ -6,7 +6,6 @@ import java.util.Scanner;
 /**
  * Created by xgh on 2016/2/25.
  */
-
 class Node{
     private int data;
     private ArrayList<Node> childern;//相邻子节点的ArrayList
