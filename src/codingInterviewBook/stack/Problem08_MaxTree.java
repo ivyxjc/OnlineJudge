@@ -22,7 +22,7 @@ class Node{
 
     @Override
     public String toString() {
-        return "value: "+value;
+        return "label: "+value;
     }
 }
 
