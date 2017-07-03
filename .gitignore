@@ -9,7 +9,7 @@ gradlew.bat
 
 out/
 
-*.iml
+
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml
@@ -31,6 +31,3 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 
-pom.xml
-src/main/
-src/test/
